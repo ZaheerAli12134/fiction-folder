@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Fiction Folder</title>
+<link rel="stylesheet" href="frontPage.css" />
+</head>
+<body>
+<header>
+  <span class="logo">Fiction Folder</span>
+  <div class="profile-dropdown" id="profileDropdown">
+    <span id="usernameDisplay" class="username">Guest</span>
+    <div class="dropdown-content" id="dropdownContent">
+      <a href="profile.html">My Profile</a>
+      <a href="messages.html">My messages</a>
+      <a href="search-friends.html">Search Friends</a>
+      <a href="#" id="logoutBtn">Logout</a>
+    </div>
+  </div>
+</header>
+
+<div class="friend-rec-section">
+  <button class="rec-btn" id="friendRecBtn">Get Friend Recommendations</button>
+  <div class="friend-rec-container" id="friendRecContainer">
+    <h3 class="rec-title">People You Might Like</h3>
+    <div id="friendRecList"></div>
+  </div>
+</div>
+
+<div class="search-container">
+  <form class="search-bar">
+    <input type="text" id="searchInput" placeholder="Search for fiction..." />
+    <button type="submit">Search</button>
+  </form>
+</div>
+
+<main id="results" class="gallery"></main>
+
+  <script type="module" src="frontpage-auth.js"></script>
+  <script src="frontpage.js"></script>
+</body>
+</html>

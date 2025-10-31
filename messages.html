@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Messages</title>
+  <link rel="stylesheet" href="frontpage.css">
+  <link rel="stylesheet" href="messages.css">
+</head>
+<body>
+  <div class="messages-layout">
+    <div class="friends-sidebar">
+      <div class="sidebar-header">
+        <div class="header-top">
+          <a href="frontPage.html" class="back-button">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M19 12H5M12 19l-7-7 7-7"/>
+            </svg>
+            Back
+          </a>
+          <h2>Messages</h2>
+        </div>
+        <div class="user-status">
+          <span id="usernameDisplay">Checking.</span>
+        </div>
+      </div>
+      
+      <div id="app" class="friends-list-container" style="display: none;">
+        <div id="friendsList" class="friends-list">
+        </div>
+      </div>
+      
+      <div id="loginPrompt" class="login-prompt" style="display: none;">
+        <p>Please <a href="loginPage.html">login</a> to view messages.</p>
+      </div>
+    </div>
+
+    <div class="chat-panel">
+      <div id="messagesContainer" class="chat-container" style="display: none;">
+        <div class="chat-header">
+          <h3>Conversation with <span id="friendName"></span></h3>
+        </div>
+        
+        <div id="messages" class="messages-area"></div>
+        
+        <div class="message-input-container">
+          <input id="msgInput" type="text" placeholder="Type your message..." />
+          <button id="sendBtn">Send</button>
+        </div>
+      </div>
+      
+      <div class="empty-chat" id="emptyChat">
+        <div class="empty-chat-content">
+          <svg width="80" height="80" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+          </svg>
+          <h3>Select a conversation</h3>
+          <p>Choose a friend from the list to start messaging</p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="messages.js"></script>
+</body>
+</html>

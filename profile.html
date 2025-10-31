@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Profile</title>
+  <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  <div class="profile-container">
+    <div class="profile-header">
+      <div class="user-info">
+        <h1 class="user-name" id="userName">Loading...</h1>
+      </div>
+      <div class="search-bar">
+        <div class="search-input-container">
+          <input type="text" id="searchInput" placeholder="Search your fiction collection...">
+          <button onclick="searchFiction()">Search</button>
+          <button class="top10-btn" onclick="showTop10()">
+            Top 10
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <div class="profile-content">
+      <div class="fictions-section">
+        <h2 class="section-title" id="sectionTitle">Your Fiction Collection</h2>
+        <div id="fictionsContainer" class="loading">
+          Loading your fictions...
+        </div>
+      </div>
+
+      <div class="sidebar">
+        <div class="action-buttons">
+          <button class="action-btn" onclick="checkFriendRequests()">Check Friend Requests</button>
+          <button class="action-btn" onclick="viewFriends()">View Friends</button>
+        </div>
+        
+        <div id="friendRequestsSection" style="display: none;">
+          <div class="action-buttons">
+            <h3 class="section-title">Friend Requests</h3>
+            <div id="friendRequestsContainer" class="loading">
+              Loading friend requests...
+            </div>
+          </div>
+        </div>
+        
+        <div id="friendsListSection" style="display: none;">
+          <div class="action-buttons">
+            <h3 class="section-title">Friends</h3>
+            <div id="friendsListContainer" class="loading">
+              Loading friends...
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="notification" class="notification"></div>
+
+  <script type="module" src="profile.js"></script>
+</body>
+</html>

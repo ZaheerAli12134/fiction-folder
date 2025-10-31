@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sign Up - Fiction Folder</title>
+<link rel="stylesheet" href="signup.css">
+</head>
+<body>
+  <div class="login-container">
+    <h2>Join Fiction Folder</h2>
+    <form id="signupForm">
+      <input type="text" id="username" placeholder="Username" required>
+      <input type="email" id="email" placeholder="Email" required>
+      <input type="password" id="password" placeholder="Password" required>
+      <div id="passwordStrength" class="password-strength"></div>
+      <button type="submit">Sign Up</button>
+    </form>
+    <a href="loginPage.html" class="signup-link">Already have an account? Login</a>
+    <div id="errorMessage" style="display: none;"></div>
+  </div>
+  <script type="module" src="signup.js"></script>
+</body>
+</html>

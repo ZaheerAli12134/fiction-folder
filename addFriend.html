@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Friend</title>
+  <link rel="stylesheet" href="frontpage.css">
+  <link rel="stylesheet" href="addFriend.css">
+</head>
+<body>
+  <div class="add-friend-container">
+    <a href="frontpage.html" class="back-btn">← Back to Home</a>
+    
+    <div class="search-section">
+      <h1>Add Friend</h1>
+      <div class="search-bar">
+        <input type="text" id="searchInput" placeholder="Search by username or email...">
+        <button onclick="searchUsers()">Search</button>
+      </div>
+    </div>
+    
+    <div id="searchResults"></div>
+  </div>
+
+  <script type="module" src="addFriend.js"></script>
+</body>
+</html>
