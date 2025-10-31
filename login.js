@@ -13,7 +13,7 @@ document.getElementById("loginForm").addEventListener("submit", async e => {
   const errorMessage = document.getElementById("errorMessage");
   try {
     await signInWithEmailAndPassword(auth, email, password);
-    window.location.href = "frontPage.html";
+    window.location.href = "index.html";
   } catch (error) {
     errorMessage.textContent = error.message;
     errorMessage.style.display = "block";

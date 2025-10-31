@@ -38,7 +38,7 @@ document.getElementById('signupForm').addEventListener('submit', async (e) => {
       friendRequests: []
     });
     
-    window.location.href = 'frontPage.html';
+    window.location.href = 'index.html';
   } catch (error) {
     errorMsg.textContent = error.message;
     errorMsg.style.display = 'block';
