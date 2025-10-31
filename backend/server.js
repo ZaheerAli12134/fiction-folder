@@ -8,9 +8,13 @@ const app = express();
 const PORT = process.env.PORT || 3000;
 
 app.use(cors({
-  origin: process.env.FRONTEND_URL,
+  origin: [
+    'https://fiction-folder.vercel.app',  
+    'http://localhost:5501'              
+  ],
   credentials: true
 }));
+
 app.use(express.json());
 
 app.get('/api/health', (req, res) => {
